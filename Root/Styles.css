@@ -1,0 +1,307 @@
+/*Barra de navegacion*/
+.navbar{
+    padding: 2rem;
+    background-color:rgba(191, 129, 107, 1); ;
+}
+.navbar-collapse{
+        align-items: center;
+        justify-content: space-between;
+}
+.hero{
+    background-color: rgba(191, 182, 174, 1);
+    min-height: 450px;
+    text-align: center;
+}
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+     font-family: "Playfair Display";
+          font-optical-sizing: auto;
+          font-weight: weight;
+          font-style: normal;
+        
+      
+
+}
+.seccion-oscura{
+    background-color:rgb(179, 136, 120); 
+    color: rgba(61, 61, 63, 1); ;
+}
+.seccion-clara{
+    background-color: rgba(191, 182, 174, 1);
+    color:rgba(61, 61, 63, 1) ;
+    display: flex;
+    padding: 50px;
+    
+}
+.texto-negro{
+    color:rgba(61, 61, 63, 1); 
+}
+.texto-claro{
+    color:rgba(191, 182, 174, 1); ;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family:  "Playfair", serif;
+    font-weight: bold;
+    
+  
+}
+.secccion-descripcion{
+    font-size: 1.2rem;
+    color: rgba(61, 61, 63, 1); 
+    font-family:  "Playfair", serif;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.hero-img-perfil{
+    height: 200px;
+    width: auto;
+   
+    margin: 20px;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: rgba(61, 61, 63, 1);
+}
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+   
+}
+.experiencia{
+    padding: 40px 40px 60px 20px;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    
+}
+.experiencia .columna{
+
+    padding: 20px ;
+    border: 2px solid rgba(61, 61, 63, 1);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;   
+   
+}
+
+
+.experiencia .columna:hover,
+.experiencia .columna i:hover
+{
+    color: rgba(191, 182, 174, 1);
+    background-color: rgba(61, 61, 63, 1);
+}
+ 
+.experiencia i {
+    font-size: 2.5rem;
+    color: rgba(61, 61, 63, 1); 
+    padding: 8px 19px;
+    border-radius: 150%;
+}
+
+.badges-contenedor{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: lighter
+   
+}
+.custom-badge {
+    background-color: rgba(165, 104, 91, 1);
+    margin: 5px;
+    font-weight: lighter;
+    color: white; 
+
+}
+.proyectos-recientes img {
+     width: 100%;
+     height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display:block;
+    transition: all 0.2s ease;  
+   
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+   
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto{
+    position: relative;
+   
+    
+}
+.proyecto-imagen-wraper{
+    width: 100%;
+    padding-top: 70%; /* Mantiene una relación de aspecto 4:3 (ajusta según sea necesario) */
+    position: relative;
+   
+  
+}
+
+.proyecto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor manteniendo la proporción */
+  }
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 3rem;
+    padding: 10px;
+
+   
+}
+.btn{
+    font-size: 1.10rem;
+    margin: 20px;
+    
+}
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding-bottom: 5rem;
+   
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color:rgba(61, 61, 63, 1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(191, 182, 174, 1);
+    padding: 2rem;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color:rgba(191, 182, 174, 1);
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: rgba(191, 182, 174, 1);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgba(191, 182, 174, 1);
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{ 
+    background-color: rgba(191, 182, 174, 1);
+    color:rgba(61, 61, 63, 1); ;
+}
+.contacto button i{
+    color: rgba(191, 182, 174, 1);
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out ;
+}
+.contacto button:hover i{
+    color: rgba(61, 61, 63, 1);
+}
+.rectangulo .contenedor-redes{
+    height: 50%;
+}
+.contenedor-redes{
+    width: 100%;
+    padding: 2rem 0;
+   
+    
+}
+.contenedor-redes i{
+    font-size: 2.5rem;
+    color:  rgba(165, 104, 91, 1);
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0.10px; /* Espaciado entre iconos */
+
+  
+}
+.contenedor-redes i:hover{
+    color: rgba(191, 182, 174, 1);
+    transform: scale(0.5);
+  
+}  
+.footer .img{
+
+background-color: aqua;
+} 
+
+/*Media queries*/
+
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+       
+
+    }
+    
+}
+
+
+/* Color Theme Swatches in RGBA */
+.INDOT｜Grey-House-1-rgba { color: rgba(61, 61, 63, 1); }
+.INDOT｜Grey-House-2-rgba { color: rgba(124, 131, 140, 1); }
+.INDOT｜Grey-House-3-rgba { color: rgba(191, 182, 174, 1); }
+.INDOT｜Grey-House-4-rgba { color: rgba(191, 129, 107, 1); }
+.INDOT｜Grey-House-5-rgba { color: rgba(165, 104, 91, 1); }
+.INDOT｜Grey-House-5-rgba { color:rgb(210, 201, 192);  }
+
