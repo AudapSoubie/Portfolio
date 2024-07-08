@@ -1,7 +1,12 @@
 /*Barra de navegacion*/
 .navbar{
-    padding: 2rem;
-    background-color:rgba(191, 129, 107, 1); ;
+    padding: 2.5rem;
+    background-color:rgba(191, 129, 107, 1); 
+    font-weight: bold;
+}
+
+.nav-link:hover{
+     color:rgba(191, 182, 174, 1); ;
 }
 .navbar-collapse{
         align-items: center;
