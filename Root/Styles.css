@@ -1,14 +1,32 @@
+
+/* Colores */
+:root { 
+    --colorPrincipalOscuro: rgb(165, 105, 91);
+    --colorPrincipalClaro: rgb(190, 130, 107);
+    --colorOscuro: rgb(62, 62, 64);
+    --colorGris: rgb(125, 132, 140);
+    --colorClaro: rgb(191, 182, 174);
+}
+
+
 /*Barra de navegacion*/
 .navbar{
     padding: 2rem;
-    background-color:rgba(191, 129, 107, 1); ;
+    background-color: var(--colorPrincipalClaro)
 }
 .navbar-collapse{
         align-items: center;
         justify-content: space-between;
 }
+
+.separador{
+    height: 1000px;
+    background-color: var(--colorPrincipalClaro);
+    color: var(--colorOscuro);
+}
+
 .hero{
-    background-color: rgba(191, 182, 174, 1);
+    background-color: var(--colorClaro);
     min-height: 450px;
     text-align: center;
 }
@@ -30,21 +48,21 @@ h1{
 
 }
 .seccion-oscura{
-    background-color:rgb(179, 136, 120); 
-    color: rgba(61, 61, 63, 1); ;
+    background-color:var(--colorPrincipalClaro);
+    color: var(--colorOscuro) ;
 }
 .seccion-clara{
-    background-color: rgba(191, 182, 174, 1);
-    color:rgba(61, 61, 63, 1) ;
+    background-color: var(--colorClaro);
+    color: var(--colorOscuro) ;
     display: flex;
     padding: 50px;
     
 }
 .texto-negro{
-    color:rgba(61, 61, 63, 1); 
+    color: var(--colorOscuro) ;
 }
 .texto-claro{
-    color:rgba(191, 182, 174, 1); ;
+    color: var(--colorClaro) ;
 }
 .seccion-titulo{
     font-size: 2rem;
@@ -56,7 +74,7 @@ h1{
 }
 .secccion-descripcion{
     font-size: 1.2rem;
-    color: rgba(61, 61, 63, 1); 
+    color: var(--colorOscuro) ;
     font-family:  "Playfair", serif;
 }
 .seccion-texto{
@@ -73,7 +91,7 @@ h1{
 }
 .hero-principal h2{
     font-size: 1.5rem;
-    color: rgba(61, 61, 63, 1);
+    color: var(--colorOscuro);
 }
 .sobre-mi{
     height: 500px;
@@ -97,7 +115,7 @@ h1{
 .experiencia .columna{
 
     padding: 20px ;
-    border: 2px solid rgba(61, 61, 63, 1);;
+    border: 2px solid var(--colorOscuro) ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,13 +128,13 @@ h1{
 .experiencia .columna:hover,
 .experiencia .columna i:hover
 {
-    color: rgba(191, 182, 174, 1);
-    background-color: rgba(61, 61, 63, 1);
+    color: var(--colorClaro);
+    background-color: var(--colorOscuro) ;
 }
  
 .experiencia i {
     font-size: 2.5rem;
-    color: rgba(61, 61, 63, 1); 
+    color: var(--colorOscuro) ;
     padding: 8px 19px;
     border-radius: 150%;
 }
@@ -128,7 +146,7 @@ h1{
    
 }
 .custom-badge {
-    background-color: rgba(165, 104, 91, 1);
+    background-color: var(--colorPrincipalOscuro);
     margin: 5px;
     font-weight: lighter;
     color: white; 
@@ -219,9 +237,9 @@ h1{
 
 .contacto .rectangulo{
     margin-top: -5rem;
-    background-color:rgba(61, 61, 63, 1);
+    background-color:var(--colorOscuro) ;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(191, 182, 174, 1);
+    box-shadow: 0px 4px 4px 0px var(--colorClaro);
     padding: 2rem;
 }
 
@@ -232,31 +250,31 @@ h1{
 }
 
 .contacto .descripcion{
-    color:rgba(191, 182, 174, 1);
+    color:var(--colorClaro);
     font-size: 1.2rem;
 }
 
 .contacto button{
-    color: rgba(191, 182, 174, 1);
+    color: var(--colorClaro);
     font-weight: bold;
     background-color: transparent;
-    border: 2px solid rgba(191, 182, 174, 1);
+    border: 2px solid var(--colorClaro);
     padding: 1.25em 2em;
     margin: 10px;
     border-radius: 100px;
     transition: all 0.2s ease-in-out;
 }
 .contacto button:hover{ 
-    background-color: rgba(191, 182, 174, 1);
-    color:rgba(61, 61, 63, 1); ;
+    background-color: var(--colorClaro);
+    color:var(--colorOscuro);
 }
 .contacto button i{
-    color: rgba(191, 182, 174, 1);
+    color: var(--colorClaro);
     font-size: 1.3rem;
     transition: all 0.2s ease-in-out ;
 }
 .contacto button:hover i{
-    color: rgba(61, 61, 63, 1);
+    color: var(--colorOscuro);
 }
 .rectangulo .contenedor-redes{
     height: 50%;
@@ -269,14 +287,14 @@ h1{
 }
 .contenedor-redes i{
     font-size: 2.5rem;
-    color:  rgba(165, 104, 91, 1);
+    color:  var(--colorPrincipalOscuro);
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 0.10px; /* Espaciado entre iconos */
 
   
 }
 .contenedor-redes i:hover{
-    color: rgba(191, 182, 174, 1);
+    color: var(--colorClaro);
     transform: scale(0.5);
   
 }  
@@ -291,17 +309,6 @@ background-color: aqua;
     .navbar-brand{
         display: none;
        
-
     }
     
 }
-
-
-/* Color Theme Swatches in RGBA */
-.INDOT｜Grey-House-1-rgba { color: rgba(61, 61, 63, 1); }
-.INDOT｜Grey-House-2-rgba { color: rgba(124, 131, 140, 1); }
-.INDOT｜Grey-House-3-rgba { color: rgba(191, 182, 174, 1); }
-.INDOT｜Grey-House-4-rgba { color: rgba(191, 129, 107, 1); }
-.INDOT｜Grey-House-5-rgba { color: rgba(165, 104, 91, 1); }
-.INDOT｜Grey-House-5-rgba { color:rgb(210, 201, 192);  }
-
