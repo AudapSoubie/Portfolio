@@ -1,8 +1,8 @@
 
 /* Colores */
 :root { 
-    --colorPrincipalOscuro: rgb(165, 105, 91);
-    --colorPrincipalClaro: rgb(190, 130, 107);
+    --blanco: white;
+    --negro: black;
     --colorOscuro: rgb(62, 62, 64);
     --colorGris: rgb(125, 132, 140);
     --colorClaro: rgb(191, 182, 174);
@@ -12,13 +12,17 @@
 /*Barra de navegacion*/
 .navbar{
     padding: 2rem;
-    background-color: var(--colorPrincipalOscuro);
+    background-color: var(--colorOscuro);
     padding: 2.5rem;
     font-weight: bold;
 }
 
+.nav-link{
+    color: var(--colorClaro);
+}
+
 .nav-link:hover{
-     color:rgba(191, 182, 174, 1); ;
+     color: var(--blanco) ;
 }
 .navbar-collapse{
         align-items: center;
@@ -26,6 +30,9 @@
 }
 
 .separador{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: var(--negro);
     height: 1px;
 }
 
@@ -47,67 +54,118 @@ h1{
           font-optical-sizing: auto;
           font-weight: weight;
           font-style: normal;
-        
-      
+}
 
-}
 .seccion-oscura{
-    background-color:var(--colorPrincipalClaro);
-    color: var(--colorOscuro) ;
+    background-color: var(--colorFondoClaro);
+    color: var(--colorFondoClaro) ;
 }
+
 .seccion-clara{
-    background-color: var(--colorClaro);
-    color: var(--colorOscuro) ;
+    background-color: var(--colorOscuro);
+    color: var(--colorClaro) ;
     display: flex;
     padding: 50px;
     
 }
+
 .texto-negro{
     color: var(--colorOscuro) ;
 }
+
 .texto-claro{
     color: var(--colorClaro) ;
 }
+
 .seccion-titulo{
     font-size: 2rem;
     padding: 15px 0;
     font-family:  "Playfair", serif;
     font-weight: bold;
-    
-  
+
 }
+
+.SeccionHorizontal {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
 .secccion-descripcion{
     font-size: 1.2rem;
     color: var(--colorOscuro) ;
     font-family:  "Playfair", serif;
 }
+
 .seccion-texto{
     font-size: 1.2rem;
+    text-align: justify;
 }
+
 .hero-principal{
     padding: 3rem;
 }
+
 .hero-img-perfil{
     height: 200px;
     width: auto;
    
     margin: 20px;
 }
+
 .hero-principal h2{
     font-size: 1.5rem;
     color: var(--colorOscuro);
 }
-.sobre-mi{
-    height: 500px;
-    padding: 10px;
-}
-.sobre-mi .contenedor{
-    max-width: 600px;
-    text-align: center;
-   
-}
+
+/* Estilos generales para la sección */
+.sobre-mi {
+    height: 50vh;
+    background-color: var(--colorOscuro); /* Fondo oscuro */
+    color: var(--colorClaro); /* Texto claro */
+    padding: 50px 0; /* Espaciado interno */
+  }
+  
+  .sobre-mi .contenedor {
+    max-width: 80vw; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrando el contenedor */
+    padding: 0 20px; /* Espaciado interno */
+  }
+  
+  .sobre-mi .seccion-titulo {
+    text-align: center; /* Centrando el título */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin-top: 10vh;
+  }
+  
+  .SeccionHorizontal {
+    display: flex; /* Utilizando flexbox para la distribución horizontal */
+    align-items: center; /* Alineando elementos verticalmente */
+    justify-content: space-between; /* Espaciado entre elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permitiendo el ajuste de elementos en pantallas pequeñas */
+  }
+  
+  .SeccionHorizontal img {
+
+    width: 20%; /* Ancho del 20% */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen vertical */
+  }
+  
+  .SeccionHorizontal .seccion-texto {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    text-align: justify; /* Justificación del texto */
+  }
+  
+
 .experiencia{
-    padding: 40px 40px 60px 20px;
+    height: 50vh;
+    padding-top: 8vh;
 }
 
 .experiencia-titulo{
@@ -116,10 +174,10 @@ h1{
     margin: 10px 0;
     
 }
-.experiencia .columna{
 
-    padding: 20px ;
-    border: 2px solid var(--colorOscuro) ;
+.experiencia .columna{
+    padding: 2vw ;
+    border: 2px solid var(--colorClaro) ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,16 +187,16 @@ h1{
 }
 
 
-.experiencia .columna:hover,
-.experiencia .columna i:hover
-{
-    color: var(--colorClaro);
-    background-color: var(--colorOscuro) ;
+
+.experiencia .columna:hover{
+    color: var(--colorOscuro);
+    background-color: var(--colorClaro);
 }
+
  
 .experiencia i {
     font-size: 2.5rem;
-    color: var(--colorOscuro) ;
+    color: var(--colorClaro) ;
     padding: 8px 19px;
     border-radius: 150%;
 }
@@ -149,16 +207,16 @@ h1{
     font-weight: lighter
    
 }
+
 .custom-badge {
-    background-color: var(--colorPrincipalOscuro);
+    background-color: var(--colorOscuro);
     margin: 5px;
     font-weight: lighter;
-    color: white; 
-
+    color: var(--colorClaro); 
 }
+
 .proyectos-recientes img {
-     width: 100%;
-     height: auto;
+    height: 100vh;
     padding: 10px;
     border-radius: 10px;
     display:block;
@@ -171,6 +229,7 @@ h1{
     margin-bottom: 40px;
    
 }
+
 .overlay{
     transition: all 0.2s ease;
     opacity: 0;
@@ -180,11 +239,13 @@ h1{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .overlay p{
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 0;
 }
+
 .proyecto{
     position: relative;
    
@@ -211,6 +272,10 @@ h1{
     opacity: 0.2;
 }
 
+.proyecto:hover .iconos-contenedor i{
+    color: var(--colorClaro);
+}
+
 .proyecto:hover .overlay{
     opacity: 1;
 }
@@ -220,16 +285,19 @@ h1{
 }
 
 .overlay i{
-    color: black;
+    color: var(--colorOscuro);
     font-size: 3rem;
-    padding: 10px;
-
-   
+    padding: 10px;   
 }
+
 .btn{
     font-size: 1.10rem;
     margin: 20px;
     
+}
+
+.contacto .seccion-titulo{
+    color: var(--colorOscuro);
 }
 
 .contacto .container{
@@ -241,9 +309,9 @@ h1{
 
 .contacto .rectangulo{
     margin-top: -5rem;
-    background-color:var(--colorOscuro) ;
+    background-color: var(--colorClaro);
     border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px var(--colorClaro);
+    box-shadow: 0px 4px 4px 0px var(--colorOscuro);
     padding: 2rem;
 }
 
@@ -254,57 +322,61 @@ h1{
 }
 
 .contacto .descripcion{
-    color:var(--colorClaro);
+    color:var(--colorOscuro);
     font-size: 1.2rem;
 }
 
 .contacto button{
-    color: var(--colorClaro);
+    color: var(--colorOscuro);
     font-weight: bold;
     background-color: transparent;
-    border: 2px solid var(--colorClaro);
+    border: 2px solid var(--colorOscuro);
     padding: 1.25em 2em;
     margin: 10px;
     border-radius: 100px;
     transition: all 0.2s ease-in-out;
 }
+
 .contacto button:hover{ 
-    background-color: var(--colorClaro);
-    color:var(--colorOscuro);
+
+    background-color: var(--colorOscuro);
+    color:var(--colorClaro);
 }
+
 .contacto button i{
-    color: var(--colorClaro);
+    color: var(--colorOscuro);
     font-size: 1.3rem;
     transition: all 0.2s ease-in-out ;
 }
+
 .contacto button:hover i{
-    color: var(--colorOscuro);
+    color: var(--colorClaro);
 }
+
 .rectangulo .contenedor-redes{
     height: 50%;
 }
+
 .contenedor-redes{
     width: 100%;
     padding: 2rem 0;
-   
-    
 }
+
 .contenedor-redes i{
     font-size: 2.5rem;
-    color:  var(--colorPrincipalOscuro);
+    color:  var(--colorOscuro);
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 0.10px; /* Espaciado entre iconos */
-
-  
 }
+
 .contenedor-redes i:hover{
-    color: var(--colorClaro);
+    color: var(--blanco);
     transform: scale(0.5);
   
 }  
-.footer .img{
 
-background-color: aqua;
+.footer .img{
+    background-color: aqua;
 } 
 
 /*Media queries*/
@@ -312,7 +384,5 @@ background-color: aqua;
 @media screen and (max-width: 767px) {
     .navbar-brand{
         display: none;
-       
     }
-    
 }
